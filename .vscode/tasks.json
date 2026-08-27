@@ -1,0 +1,140 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Train defect prediction models",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\train_models.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Train defect prediction models",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\train_models.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Train defect prediction models",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\train_models.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Train final defect model",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\train_models.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate prediction pipeline",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\validate_pipeline.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Generate final project report",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\generate_report.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install report dependency",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe -m pip install python-docx",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Generate final project report",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\generate_report.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Compile dashboard",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe -m py_compile app\\app.py src\\*.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Compile Python modules",
+			"type": "shell",
+			"command": "Get-ChildItem src,app -Filter *.py -File | ForEach-Object { .\\venv\\Scripts\\python.exe -m py_compile $_.FullName }",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Validate Streamlit startup",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\validate_dashboard.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Run final project audit",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\_final_audit.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Regenerate technical report",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\generate_report.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Validate documentation cleanup",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\_doc_cleanup_check.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Recheck documentation cleanup",
+			"type": "shell",
+			"command": ".\\venv\\Scripts\\python.exe src\\_doc_cleanup_check.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+  "raw_rows": 1109,
+  "duplicate_rows_removed": 155,
+  "rows_after_duplicate_removal": 954,
+  "raw_features": 21,
+  "dropped_features": [
+    "T"
+  ],
+  "reason_for_dropped_features": "T is perfectly correlated with E in the observed PC1 data.",
+  "missing_values": 0,
+  "infinite_values": 0,
+  "outlier_policy": "Retain plausible extreme software metrics; scaling is performed in the fitted pipeline.",
+  "imbalance_policy": "Use balanced class weights on supported estimators; no resampling is applied."
+}

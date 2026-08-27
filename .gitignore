@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local data and generated artifacts
+data/raw/*
+data/processed/*
+models/*.joblib
+reports/figures/*
+
+# Keep directory placeholders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!reports/figures/.gitkeep
